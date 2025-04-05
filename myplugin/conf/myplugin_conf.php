@@ -8,17 +8,21 @@ function get_myplugin_schema() {
                 "ENABLED" => [
                     "userlvl" => "basic",
                     "type" => "boolean",
-                    "description" => "Enable this plugin."
+                    "description" => "Enable this plugin.",
+                    "default" => true
+
                 ],
                 "ADVANCED_SETTING" => [
                     "userlvl" => "pro",
                     "type" => "string",
-                    "description" => "An advanced setting for the plugin."
+                    "description" => "An advanced setting for the plugin.",
+                    "default" => "advanced default"
                 ],
                 "EXPERIMENTAL_SETTING" => [
                     "userlvl" => "wip", 
                     "type" => "longstring",
-                    "description" => "An experimental setting for the plugin"
+                    "description" => "An experimental setting for the plugin",
+                    "default" => "experimental default"
                 ]
             ],
             "Secondary_Settings" => [
@@ -26,7 +30,7 @@ function get_myplugin_schema() {
                 "Example_item" => [
                     "userlvl" => "basic",
                     "type" => "boolean",
-                    "description" => "Example item in group"
+                    "description" => "Example item in group",
                 ]
             ],
         ]
